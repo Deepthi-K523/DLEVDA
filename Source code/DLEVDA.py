@@ -180,11 +180,11 @@ def CNN_feature(x,y):
     model = Sequential()
     return_sequences=True
 
-    model.add(Convolution2D(16, (1,16),strides=(1,1), activation='relu', padding='same', data_format='channels_last',name='layer1_con1',input_shape=(1,253,1)))
+    model.add(Convolution2D(16, (1,16),strides=(1,2), activation='relu', padding='same', data_format='channels_last',name='layer1_con1',input_shape=(1,253,1)))
           
     model.add(Dropout(0.5)) 
 
-    model.add(MaxPooling2D(pool_size=(1,2),strides=(1,1), padding = 'same', data_format='channels_last',name = 'layer1_pool'))
+    model.add(MaxPooling2D(pool_size=(1,2),strides=(1,2), padding = 'same', data_format='channels_last',name = 'layer1_pool'))
 
     model.add(Flatten())
     model.add(Dense(128, activation='relu',  name='Dense-2'))
