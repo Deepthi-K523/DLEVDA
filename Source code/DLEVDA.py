@@ -154,12 +154,8 @@ def preprocess_labels(labels, encoder=None, categorical=True):
 
 
 def CNN_feature(x,y):
-
     
-    x_train=x_train.reshape(-1,1,253,1)  
-    x_test=x_test.reshape(-1,1,253,1)   
-    
-   
+     
     model = Sequential()
     return_sequences=True
 
