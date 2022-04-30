@@ -2,4 +2,4 @@ DLEVDA: A Deep Learning Ensemble Approach to prioritize Antiviral Drugs against 
 
 Article link: https://www.sciencedirect.com/science/article/pii/S156849462100867X
 
-*Researchers can use the code with proper citation.
+**Researchers can use the code with proper citation.
