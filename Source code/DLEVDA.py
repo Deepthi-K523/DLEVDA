@@ -175,7 +175,7 @@ def CNN_feature(x,y):
     model.fit(x_train, y_train, epochs=20, batch_size=10,validation_split=0.1)
     from keras.models import Model
     dense1_layer_model = Model(inputs=model.input, outputs=model.get_layer('Dense-2').output)
-    dense1_output = dense1_layer_model.predict(x)
+    dense1_output = dense1_layer_model.predict()
     print("extracted feature shape=dense1_outout=",dense1_output.shape)
    
 
